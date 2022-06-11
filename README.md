@@ -52,4 +52,9 @@ June 11, 2022
 we make a ERD of our database. 
 
 June 12, 2022 The project-due-date
+
+# How to use the application: 
+1. Fill out the data formula 
+
+2. SurveyApply sends you an email regarding information based on how many people filled out the formula. 
  
