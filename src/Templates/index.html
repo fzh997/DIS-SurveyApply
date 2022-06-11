@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <title>Survey Application</title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "container">
+            <h1>SurveyApply</h1>
+            <h3>Please fillout the entires for all questions</h3>
+            <div class="message">
+                {{text | safe}} 
+            </div>
+            <form action="{{url_for('success')}}" method="POST">
+                <input title="Your name is save with us" placeholder="Enter your name" type="text" name="name_name" required minlength="2" maxlength="20" size="40"><br>
+                <input title="Your surname is save with us" placeholder="Enter your surname" type="text" name="surname_name" required minlength="2" maxlength="20" size="40"><br>
+                <input title="Your email will be safe with us" placeholder="Enter your email address" type="email" name="email_name" required><br>
+                <input title="Your data will be safe with us" placeholder="Enter your height in cm" type="number" min="50" max="300" name="height_name" required><br>
+                <input title="Your age will be safe with us" placeholder="Enter your age" type="number" min="0" max="120" name="age_name" required><br>
+                <input title="Your shoesize will be safe with us" placeholder="Enter your shoesize in EU sizes" type="number" min="20" max="60" step="any" name="shoesize_name" required><br>
+                <button type="submit">Submit</button> 
+            </form>
+        </div>
+    </body>
+</html>
